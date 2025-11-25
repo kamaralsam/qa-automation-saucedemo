@@ -1,8 +1,7 @@
-SauceDemo QA Automation Suite (Selenium + Pytest)
-UI Automation • API Testing • Python • Professional QA Portfolio Project
+**SauceDemo QA Automation Suite (Selenium + Pytest)
+UI Automation • API Testing • Python • Professional QA Portfolio Project**
 
-
-⭐ Overview
+**⭐ Overview**
 
 This project is a complete QA automation suite combining:
 
@@ -20,7 +19,7 @@ The system under test is the public SauceDemo web application, which is commonly
 
 This suite demonstrates real-world QA automation skills suitable for entry-level QA, automation trainee, or junior SDET roles.
 
-🧰 Tech Stack
+**🧰 Tech Stack**
 Area	Tools
 Language	Python 3.12
 Automation Framework	Pytest
@@ -29,7 +28,8 @@ Browser	Chrome (webdriver-manager)
 API Testing	requests
 Virtual Environment	venv
 Editor	VS Code
-📁 Project Structure
+
+**📁 Project Structure**
 qa_automation_project/
 │
 ├── manual/
@@ -50,7 +50,7 @@ qa_automation_project/
 ├── requirements.txt
 └── README.md
 
-🖥️ UI Test Coverage (Selenium)
+**🖥️ UI Test Coverage (Selenium)**
 Test Case	Description	Status
 TC_UI_001	Login with valid credentials	✅ PASS
 TC_UI_002	Login with invalid password	✅ PASS
@@ -62,26 +62,27 @@ TC_UI_007	Logout returns to login page	⚠️ XFAIL (menu animation delay)
 
 The two xfail tests are intentionally kept as stretch tests to demonstrate handling of asynchronous UI timing issues in headless mode.
 
-🌐 API Test Coverage
+**🌐 API Test Coverage**
 Test Case	Endpoint	Expected Behavior	Status
 TC_API_001	/api/users?page=2	Returns 200 + user list	🟢 PASS
-▶️ How to Run the Tests
-1. Activate virtual environment
+
+**▶️ How to Run the Tests**
+**1. Activate virtual environment**
 venv\Scripts\activate
 
-2. Install dependencies
+**2. Install dependencies**
 pip install -r requirements.txt
 
-3. Run all tests
+**3. Run all tests**
 pytest -v
 
-4. Run only UI tests
+**4. Run only UI tests**
 pytest -v tests/ui
 
-5. Run only API tests
+**5. Run only API tests**
 pytest -v tests/api
 
-⚠️ Handling Flaky Tests (Professional Practice)
+**⚠️ Handling Flaky Tests (Professional Practice)**
 
 Two tests are marked as:
 
@@ -98,13 +99,13 @@ Headless browsers are more timing-sensitive
 
 Instead of deleting or hiding them, they are documented and kept for realism — recruiters appreciate this transparency.
 
-📸 Example Pytest Output
+**📸 Example Pytest Output**
 7 passed, 1 xfailed, 1 xpassed in 110.58s
 
 
 This output is expected and reflects a mature suite with documented flakiness.
 
-🚀 Future Enhancements
+**🚀 Future Enhancements**
 
 Convert to Page Object Model (POM)
 
